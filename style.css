@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.blocs-container {
+  margin: 20px 0;
+}
+
+.bloc {
+  width: 180px;
+  height: 180px;
+  background-color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid black;
+  margin: 10px;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.bloc:hover {
+  opacity: 0.8;
+}
+
+#code {
+  font-weight: bold;
+  margin: 15px 0;
+}
