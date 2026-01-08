@@ -24,7 +24,7 @@ function couleurAleatoire() {
   );
 }
 
-// Mettre à jour le texte sous les blocs
+// Met à jour le texte sous les blocs à chaque clic
 function mettreAJourTexte() {
   code.innerHTML = `
     Bloc 1 : ${couleursBlocs.bloc1}
@@ -33,7 +33,7 @@ function mettreAJourTexte() {
   `;
 }
 
-// Initialiser le texte
+// Initialiser le texte dans les blocs
 mettreAJourTexte();
 
 // Cliquer sur un bloc pour changer sa couleur
