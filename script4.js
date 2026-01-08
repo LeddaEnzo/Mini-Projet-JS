@@ -6,6 +6,7 @@ const appliquerBtn = document.querySelector("#appliquer");
 const reinitialiserBtn = document.querySelector("#reinitialiser");
 
 // Définition des actions qui seront exécutées
+// Les carrées sont blancs au chargement de la page 
 const couleursBlocs = {
   bloc1: "#FFFFFF",
   bloc2: "#FFFFFF",
@@ -24,16 +25,16 @@ function couleurAleatoire() {
   );
 }
 
-// Met à jour le texte sous les blocs à chaque clic
+// Met à jour le texte sous les blocs à chaque changement de couleur
 function mettreAJourTexte() {
   code.innerHTML = `
     Bloc 1 : ${couleursBlocs.bloc1}
     Bloc 2 : ${couleursBlocs.bloc2}
     Bloc 3 : ${couleursBlocs.bloc3}
-  `;
+  `; // la fonction attribue le code héxadécimal généré à chaque fois et l'affiche sous les blocs
 }
 
-// Initialiser le texte dans les blocs
+// Initialise le texte dans les blocs
 mettreAJourTexte();
 
 // Cliquer sur un bloc pour changer sa couleur
